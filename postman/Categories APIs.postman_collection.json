@@ -1,0 +1,192 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Categories APIs",
+		"_postman_id": "a28246dd-f504-d741-b404-ddbb999a6ff3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all categories",
+			"request": {
+				"url": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/categories",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create category",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/categories?categoryName=Electronics and Applience&categoryDescription=It contains Smartphones,Laptops and Computers Cameras and Photography Equipment, Audio Devices Headphones,Speakers) Wearable Technology&catgeoryImageUrl=http://healthandwellness&active=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "categoryName",
+							"value": "Electronics and Applience",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "categoryDescription",
+							"value": "It contains Smartphones,Laptops and Computers Cameras and Photography Equipment, Audio Devices Headphones,Speakers) Wearable Technology",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "catgeoryImageUrl",
+							"value": "http://healthandwellness",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "active",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get one category",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/categories?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update category",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/categories?categoryName=Health and Medicine&categoryDescription=It containsVitamins and Supplements, Fitness Trackers, Medical Equipment, Healthy Snacks,Personal Care Products\n\n\n\n\n&catgeoryImageUrl=http://healthandmedicine&active=1&categoryId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "categoryName",
+							"value": "Health and Medicine",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "categoryDescription",
+							"value": "It containsVitamins and Supplements, Fitness Trackers, Medical Equipment, Healthy Snacks,Personal Care Products\n\n\n\n\n",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "catgeoryImageUrl",
+							"value": "http://healthandmedicine",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "active",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "categoryId",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/categories?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
