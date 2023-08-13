@@ -1,0 +1,264 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Users APIs",
+		"_postman_id": "22ba8534-1911-0746-5fcf-24ab28aeb3d0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All users",
+			"request": {
+				"url": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/users?email=sree@simplilearn.com&password=Sree@123&fullName=Sreekanya Vakkalanka&street=PQR street&city=Boston&state=MA&country=USA&pincode=45667&image=sample.jpg&contact=90334845454",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "sree@simplilearn.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "Sree@123",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fullName",
+							"value": "Sreekanya Vakkalanka",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "street",
+							"value": "PQR street",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "city",
+							"value": "Boston",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "state",
+							"value": "MA",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "country",
+							"value": "USA",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "45667",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "image",
+							"value": "sample.jpg",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "contact",
+							"value": "90334845454",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get one user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/users?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/users?email=sreekanya@simplilearn.com&password=SreeK@123&fullName=Sreekanya Vakkalanka&street=PQR Northway street&city=Frisco&state=Texas&country=USA&pincode=45667&image=sample.jpg&contact=90334845454&userId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "sreekanya@simplilearn.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "SreeK@123",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fullName",
+							"value": "Sreekanya Vakkalanka",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "street",
+							"value": "PQR Northway street",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "city",
+							"value": "Frisco",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "state",
+							"value": "Texas",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "country",
+							"value": "USA",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "45667",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "image",
+							"value": "sample.jpg",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "contact",
+							"value": "90334845454",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/users?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

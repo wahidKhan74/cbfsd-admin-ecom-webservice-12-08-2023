@@ -19,7 +19,7 @@ public class User {
 	private Date addedOn;
 	
 	// default constructor 
-	User(){ }
+	public User(){ }
 
 	// parameterized constructor
 	public User(int userId, String email, String password, String fullName, String street, String city, String state,

@@ -1,0 +1,226 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Admin APIs",
+		"_postman_id": "6a1b015d-c73e-d200-fdd6-23ffbb9195f3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Admin user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins?email=cadmin@simplilearn.com&password=CAdmin@123&fullName=Admininstrator&loginType=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "cadmin@simplilearn.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "CAdmin@123",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fullName",
+							"value": "Admininstrator",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "loginType",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Admin users",
+			"request": {
+				"url": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Admin user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Admin user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins?email=cpadmin@simplilearn.com&password=CPAdmin@123&fullName=Copy Right Admininstrator&loginType=2&adminId=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "cpadmin@simplilearn.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "CPAdmin@123",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fullName",
+							"value": "Copy Right Admininstrator",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "loginType",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "adminId",
+							"value": "4",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Admin user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn Admin user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8070/cbfsd-admin-ecom-webservice-12-08-2023/admins/login?email=admin@simplilearn.com&password=Admin@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"cbfsd-admin-ecom-webservice-12-08-2023",
+						"admins",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@simplilearn.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "Admin@123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

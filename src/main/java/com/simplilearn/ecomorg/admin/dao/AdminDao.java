@@ -12,6 +12,32 @@ public class AdminDao implements DAO<Admin>{
 
 	DB db = new DB();
 	
+	// validate admin login
+	public Admin login(Admin admin) {
+		db.init();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		try {
+			String sql = "select * from ADMINS where email='"+admin.getEmail()
+			+"' and password='"+admin.getPassword() +"'";
+			ResultSet res = db.executeQuery(sql);
+			if (res.next()) {
+				admin.setAdminId(res.getInt("adminId"));
+				admin.setFullName(res.getString("fullName"));
+				admin.setEmail(res.getString("email"));
+				admin.setPassword(res.getString("password"));
+				admin.setLoginType(res.getInt("loginType"));
+				admin.setAddedOn(format.parse(res.getString("addedOn")));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Something went wrong :: " + e.getMessage());
+		} finally {
+			db.destroy();
+		}
+		return admin;
+	}
+	
+	// Get all admin users
 	public List<Admin> getAll() {
 		db.init();
 		List<Admin> adminList = new ArrayList<Admin>();
